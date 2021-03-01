@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href='/'>Home</a>
+    <a href='/stats'>Stats</a>
+    <h1>{{site.name}}</h1>
+    {{ef}}
+    <h1>Graph</h1>
+    
+
+  </body>
+</html>

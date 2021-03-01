@@ -1,0 +1,28 @@
+[
+    {
+        "siteid": 1,
+        "name": "zillow.com",
+        "introspectionAllowed": false,
+        "lastUpdate": 1614620229831
+    },
+    {
+        "siteid": 2,
+        "name": "glassdoor.com",
+        "endpoints": [
+            {
+                "endpoint": "/graphql",
+                "introspectionAllowed": true,
+                "lastUpdate": 1614620069831
+            },
+            {
+                "endpoint": "/internalApi",
+                "introspectionAllowed": true,
+                "lastUpdate": 1614620049831
+            }
+        ]
+    },
+    {
+        "name": "site.com",
+        "prop": "words"
+    }
+]
