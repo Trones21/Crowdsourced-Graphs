@@ -1,0 +1,10 @@
+{
+    "name": "CrowdsourcedGraphs",
+    "manifest_version": 3,
+    "version": "1.0",
+    "permissions": ["webRequest"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
