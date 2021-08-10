@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table>
+        <thead>
+            <tr>
+              <th>Domain</th>
+              <th>Endpoints</th>
+              <th>Date Discovered</th>
+            </tr>
+           </thead>
+        <tbody>
+            {% for domain in domains %}
+                <tr>
+                    <td><a href="/domains/{{domain.id}}">{{domain.name}}{{domain.extension}}</a></td>
+                    <td>{{domain.endpointCount}}</td>
+                    <td>{{domain.discoveryDate}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    
+    </table>
+{% endblock %}
