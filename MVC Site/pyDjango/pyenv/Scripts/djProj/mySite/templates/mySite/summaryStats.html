@@ -1,46 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summary Stats</title>
-</head>
-
-<body>
+{% extends "base.html"%}
+{% block content %}
+    ToDo: Arrange these boxes into a graph ---
     Crowdsourced Graphs contains:
-    <div class="statsContainer">
-        <div class="statsBox">
-            <span>{{domainCount}}</span>
-            <p>domains</p>
+    <div class="container">
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header">Test</div>
+            <div class="card-body">
+                <h4 class="card-title">{{domainCount}} Domains </h4>
+                <p class="card-text">with a total of</p>
+            </div>
         </div>
-        with a total of
-        <div class="statsBox">
-           <span>{{endpointCount}}</span> 
-           <p>endpoints,</p>
-
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-body">
+                <h4 class="card-title">{{endpointCount}}</h4>
+                <p class="card-text">Endpoints, which were contributed by</p>
+            </div>
         </div>
-        which were contributed by
-        <div class="statsBox">
-            <span>{{userCount}}</span>
-            <p>users</p>
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-body">
+                <h4 class="card-title">{{userCount}}</h4>
+                <p class="card-text">Users, from </p>
+            </div>
         </div>
-
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h4 class="card-title">{{countryCount}}</h4>
+                <p class="card-text">countries</p>
+            </div>
+        </div>
+        Of these endpoints:
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h4 class="card-title">{{graphQLCount}}</h4>
+                <p class="card-text">Use graphQL</p>
+            </div>
+        </div>
+        <div class="card border-primary mb-3" style="max-width: 20rem;">
+            <div class="card-header"></div>
+            <div class="card-body">
+                <h4 class="card-title">{{graphQLIntrospectionTrueCount}}</h4>
+                <p class="card-text">Allow Introspection</p>
+            </div>
+        </div>
     </div>
-    <div class="statsContainer">
-    <div class="statsBox">
-        <span>{{graphQLCount}}</span>
-        <p>Use GraphQL</p>
-    </div>
-    <div class="statsBox">
-        <span>{{graphQLIntrospectionTrueCount}}</span>
-        <p>allow introspection</p>
-    </div>
-</div>
-
-
-
-</body>
-
-</html>
+{% endblock %}

@@ -16,13 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from mySite.views import welcome, summaryStats, domainDetail, domainsList
+from mySite.views import welcome, summaryStats, domainDetail, userDetail , domainsList, about, joinUs
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', domainsList),
-    path('summaryStats', summaryStats),
+    path('', summaryStats),
+    path('about', about),
+    path('joinUs', joinUs),
     path('domains/<int:id>', domainDetail),
-    path('domains/all', domainsList)
+    path('users/<int:id>', userDetail),
+    path('domainList', domainsList)
 
 ]

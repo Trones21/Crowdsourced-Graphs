@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{%load static %}
+{% block content%}
+<div>
+    About
+
+    This project came about after a realization I came to about webscraping and graphQL Introspection. 
+    
+    See I do alot of webscraping. Part of this process is opening up the network tab in chrome dev tools, and then browsing normally. 
+    This allows me to see the network requests/responses that are being sent/received as I do specific actions. 
+    Sometimes it can take a little while to understand exactly what data is exposed by an endpoint. What parameters can I send, etc.?
+    When I wanted to scrape some graphQL based sites, I remembered that you can use graphQL introspection request and the server will return 
+    the full schema definition! 
+    
+    A data buffet for webscrapers! After trying this out, I was amazed that some MAJOR companies don't block graphQL introspection, but unfortunately
+    some do. 
+
+    The idea behind CSG is to document all graph schemas, and whether or not they allow introspection. 
+    So even if introspection is blocked, future webscrapers can just look up the schema on CSG.
+
+    Check out the <a href="joinUs">JoinUs</a> page to see how you can add endpoints to the database.
+</div>
+{% endblock %}
