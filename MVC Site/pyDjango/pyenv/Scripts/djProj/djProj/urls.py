@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from mySite.views import welcome, summaryStats, domainDetail, userDetail , domainsList, about, joinUs
+from mySite.views import welcome, summaryStats, domainDetail, userDetail , domainsList, about, joinUs, addOrUpdate
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('joinUs', joinUs),
     path('domains/<int:id>', domainDetail),
     path('users/<int:id>', userDetail),
-    path('domainList', domainsList)
+    path('domainList', domainsList),
+    path('addOrUpdate', addOrUpdate)
 
 ]
